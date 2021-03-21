@@ -1,0 +1,57 @@
+body{
+    background-color:lightblue;
+    counter-reset: Serial;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkblue;
+}
+.input{
+    background-color: beige;
+    height: 300px;
+    width: 40%;
+    margin: auto;
+    border: 3px solid green;
+}
+form{
+    margin-top: 50px;
+    text-align: center;
+    text-size-adjust: 5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+#btn{
+    color:red;
+    border:none;
+    font-size: 1.3rem;
+    display: inline-block;
+    background-color: rgb(88, 224, 88);
+    height: 50px;
+    width: 200px;
+}
+.output{
+    margin-top: 50px;
+}
+#outputTable{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial); /* Display the counter */
+}
+tr{
+    font-size: 1.5rem;
+}
+td{
+    background-color: beige;
+    font-family: fantasy;
+    font-size: 1.3rem;
+}
+table, tr,td{
+    border: 2px solid green;
+}
